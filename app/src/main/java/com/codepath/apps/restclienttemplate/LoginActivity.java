@@ -25,7 +25,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 		AsyncTask<SampleModel, Void, Void> task = new AsyncTask<SampleModel, Void, Void>() {
 			@Override
 			protected Void doInBackground(SampleModel... sampleModels) {
-				sampleModelDao.insertModel(sampleModels);
+			    sampleModelDao.insertModel(sampleModels);
 				return null;
 			};
 		};
