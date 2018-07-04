@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ComposeActivity">
 
+    <EditText
+        android:id="@+id/etTweetBody"
+        android:layout_width="383dp"
+        android:layout_height="171dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/btnTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tweet"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="171dp" />
 </android.support.constraint.ConstraintLayout>
