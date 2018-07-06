@@ -15,9 +15,10 @@
         android:ems="10"
         android:gravity="top"
         android:hint="What's happening?"
-        android:textColorHint="#808080"
         android:inputType="textImeMultiLine"
         android:singleLine="false"
+        android:textColorHint="#808080"
+        android:textColorLink="#243447"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="1dp" />
 
