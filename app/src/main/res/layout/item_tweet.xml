@@ -45,5 +45,5 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:text="TextView"
-        android:textColor="#243447" />
+        android:textColor="#f0f0f0" />
 </RelativeLayout>

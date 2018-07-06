@@ -17,6 +17,7 @@
         android:hint="What's happening?"
         android:inputType="textImeMultiLine"
         android:singleLine="false"
+        android:textColor="#ffffff"
         android:textColorHint="#808080"
         android:textColorLink="#243447"
         android:textSize="25dp"
