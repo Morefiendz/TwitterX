@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
+        android:background="#1da1f2"
         android:onClick="loginToRest"
         android:text="@string/login_label"
-        android:background="#243447"
         android:textColor="#ffffff" />
 
 </RelativeLayout>
