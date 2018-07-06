@@ -26,6 +26,8 @@ public class ComposeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_compose);
 
         etTweet = findViewById(R.id.etTweetBody);
+
+        setTitle("Compose Tweet");
     }
 
     public void networkRequest(View v){

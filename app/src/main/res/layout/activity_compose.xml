@@ -4,15 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#141d26"
     tools:context=".ComposeActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <EditText
         android:id="@+id/etTweetBody"
         android:layout_width="383dp"
-        android:layout_height="171dp"
+        android:layout_height="334dp"
         android:ems="10"
-        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="What's happening?"
+        android:textColorHint="#808080"
+        android:inputType="textImeMultiLine"
+        android:singleLine="false"
+        android:textSize="25dp"
         tools:layout_editor_absoluteX="1dp" />
 
     <Button
@@ -21,8 +27,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/etTweetBody"
-        android:text="Tweet"
+        android:background="#1da1f2"
+        android:textColor="#ffffff"
         android:onClick="networkRequest"
+        android:text="Tweet"
         tools:layout_editor_absoluteX="295dp"
         tools:layout_editor_absoluteY="171dp" />
 </RelativeLayout>
