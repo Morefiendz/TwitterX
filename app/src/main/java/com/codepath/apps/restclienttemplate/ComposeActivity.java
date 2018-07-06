@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
@@ -20,12 +19,13 @@ import cz.msebera.android.httpclient.Header;
 public class ComposeActivity extends AppCompatActivity {
     private TwitterClient client = TwitterApp.getTwitterClient(this);
     EditText etTweet;
-    Button btnSendTweet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compose);
+
+        etTweet = findViewById(R.id.etTweetBody);
     }
 
     public void networkRequest(View v){
@@ -36,8 +36,8 @@ public class ComposeActivity extends AppCompatActivity {
                     Tweet tweet = Tweet.fromJSON(response);
 
                     Intent intent = new Intent();
-                    intent.putExtra("name", Parcels.wrap(tweet));
-                    intent.putExtra("code", 200);
+                    intent.putExtra("tweet", Parcels.wrap(tweet));
+                    //intent.putExtra("code", 200);
 
                     setResult(RESULT_OK, intent);
                     finish();
@@ -52,10 +52,5 @@ public class ComposeActivity extends AppCompatActivity {
                 Log.e("sendtweetjson", "sendtweet json failed");
             }
         });
-    }
-
-    public void onSubmit(View v) {
-        // closes the activity and returns to first screen
-        this.finish();
     }
 }
